@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<title>Flask</title>
+<div class=page>
+  <h1>Flask</h1>
+  {% for message in get_flashed_messages() %}
+    <div class=flash>{{ message  }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</div>
+
